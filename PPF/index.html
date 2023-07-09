@@ -950,6 +950,56 @@
       font-weight: 900;
       src: url(../fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf) format('truetype');
     }
+
+
+/* STRUCTURE */
+
+.wrapper {
+	padding: 5px;
+	max-width: 1400px;
+	width: 95%;
+	margin: 20px auto;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+  text-align: center;
+}
+.column > h3{
+  color: white !important;
+}
+.packageHeader
+{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 5%;
+}
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
   </style>
   <script type='text/javascript' src='../wp-includes/js/jquery/jquery.mina767.js?ver=3.6.3'
     id='jquery-core-js'></script>
@@ -1312,20 +1362,6 @@
                       </g>
                     </svg></span></a>
               </li>
-
-              <!--
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33 qodef--hide-link qodef-menu-item--narrow">
-            <a href="about-us/index.html"><span class="qodef-menu-item-text">About Us<svg
-                  class="qodef-svg--menu-arrow qodef-menu-item-arrow" xmlns="http://www.w3.org/2000/svg"
-                  width="8.485" height="14.14" viewBox="0 0 8.485 14.14">
-                  <g transform="translate(-1371.757 -219.93)">
-                    <rect width="10" height="2" transform="translate(1380.243 226.999) rotate(135)" />
-                    <rect width="10" height="2" transform="translate(1378.829 228.415) rotate(-135)" />
-                  </g>
-                </svg></span></a>
-          </li>
-          -->
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 qodef--hide-link qodef-menu-item--narrow">
                 <a href="../contact-us/index.html"><span class="qodef-menu-item-text">Contact Us<svg
@@ -1375,50 +1411,6 @@
                       </g>
                     </svg></span></a>
               </li>
-              <!--
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32 qodef--hide-link qodef-menu-item--narrow">
-            <a href="#" ><span class="qodef-menu-item-text">Pages<svg
-                  class="qodef-svg--menu-arrow qodef-menu-item-arrow" xmlns="http://www.w3.org/2000/svg"
-                  width="8.485" height="14.14" viewBox="0 0 8.485 14.14">
-                  <g transform="translate(-1371.757 -219.93)">
-                    <rect width="10" height="2" transform="translate(1380.243 226.999) rotate(135)" />
-                    <rect width="10" height="2" transform="translate(1378.829 228.415) rotate(-135)" />
-                  </g>
-                </svg></span></a>
-            <div class="qodef-drop-down-second">
-              <div class="qodef-drop-down-second-inner">
-                <ul class="sub-menu">
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2240"><a
-                      href="about-us/index.html"><span class="qodef-menu-item-text">About Us</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251"><a
-                      href="who-we-are/index.html"><span class="qodef-menu-item-text">Who We Are</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2245"><a
-                      href="our-offers/index.html"><span class="qodef-menu-item-text">Our Offers</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2244"><a
-                      href="our-clients/index.html"><span class="qodef-menu-item-text">Our Clients</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2247"><a
-                      href="schedule/index.html"><span class="qodef-menu-item-text">Schedule</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2246"><a
-                      href="faq-page/index.html"><span class="qodef-menu-item-text">FAQ Page</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2248"><a
-                      href="vehicles/index.html"><span class="qodef-menu-item-text">Vehicles</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2252"><a
-                      href="oil-change/index.html"><span class="qodef-menu-item-text">Oil Change</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2253"><a
-                      href="wheels-tires/index.html"><span class="qodef-menu-item-text">Wheels &#038;
-                        Tires</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2250"><a
-                      href="contact-us/index.html"><span class="qodef-menu-item-text">Contact Us</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242"><a
-                      href="get-in-touch/index.html"><span class="qodef-menu-item-text">Get In Touch</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2241"><a
-                      href="coming-soon/index.html"><span class="qodef-menu-item-text">Coming Soon</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          -->
 
           <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-32 qodef--hide-link qodef-menu-item--narrow">
             <a href="#"><span class="qodef-menu-item-text">Services<svg
@@ -1459,63 +1451,7 @@
                       </g>
                     </svg></span></a>
               </li>
-              <!--
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34 qodef--hide-link qodef-menu-item--narrow">
-            <a href="#"><span class="qodef-menu-item-text">Blog<svg
-                  class="qodef-svg--menu-arrow qodef-menu-item-arrow" xmlns="http://www.w3.org/2000/svg"
-                  width="8.485" height="14.14" viewBox="0 0 8.485 14.14">
-                  <g transform="translate(-1371.757 -219.93)">
-                    <rect width="10" height="2" transform="translate(1380.243 226.999) rotate(135)" />
-                    <rect width="10" height="2" transform="translate(1378.829 228.415) rotate(-135)" />
-                  </g>
-                </svg></span></a>
-            <div class="qodef-drop-down-second">
-              <div class="qodef-drop-down-second-inner">
-                <ul class="sub-menu">
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a
-                      href="blog-right-sidebar/index.html"><span class="qodef-menu-item-text">Blog Right
-                        Sidebar</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a
-                      href="blog-left-sidebar/index.html"><span class="qodef-menu-item-text">Blog Left
-                        Sidebar</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684"><a
-                      href="blog-no-sidebar/index.html"><span class="qodef-menu-item-text">Blog No
-                        Sidebar</span></a></li>
-                  <li
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-380 qodef--hide-link">
-                    <a href="#"><span class="qodef-menu-item-text">Post
-                        Types<svg class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                          xmlns="http://www.w3.org/2000/svg" width="8.485" height="14.14" viewBox="0 0 8.485 14.14">
-                          <g transform="translate(-1371.757 -219.93)">
-                            <rect width="10" height="2" transform="translate(1380.243 226.999) rotate(135)" />
-                            <rect width="10" height="2" transform="translate(1378.829 228.415) rotate(-135)" />
-                          </g>
-                        </svg></span></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-379"><a
-                          href="hands-on-the-wheel/index.html"><span
-                            class="qodef-menu-item-text">Standard</span></a></li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-381"><a
-                          href="car-design/index.html"><span class="qodef-menu-item-text">Audio</span></a></li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-382"><a
-                          href="drive-safe/index.html"><span class="qodef-menu-item-text">Gallery</span></a></li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-383"><a
-                          href="best-technology/index.html"><span class="qodef-menu-item-text">Link</span></a></li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-384"><a
-                          href="tech-revolution/index.html"><span class="qodef-menu-item-text">Quote</span></a></li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-385"><a
-                          href="car-fair/index.html"><span class="qodef-menu-item-text">Video</span></a></li>
-                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-683"><a
-                          href="complete-wheels/index.html"><span class="qodef-menu-item-text">No Sidebar</span></a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          -->
+              
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 qodef--hide-link qodef-menu-item--narrow">
                 <a href="../contact-us/index.html"><span class="qodef-menu-item-text">Contact Us<svg
@@ -1578,50 +1514,6 @@
               </g>
             </svg>
           </li>
-          <!--
-      <li
-        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32 qodef--hide-link qodef-menu-item--narrow">
-        <a href="#" onclick="JavaScript: return false;"><span class="qodef-menu-item-text">Pages</span></a><svg
-          class="qodef-svg--menu-arrow qodef-menu-item-arrow" xmlns="http://www.w3.org/2000/svg" width="8.485"
-          height="14.14" viewBox="0 0 8.485 14.14">
-          <g transform="translate(-1371.757 -219.93)">
-            <rect width="10" height="2" transform="translate(1380.243 226.999) rotate(135)" />
-            <rect width="10" height="2" transform="translate(1378.829 228.415) rotate(-135)" />
-          </g>
-        </svg>
-        <div class="qodef-drop-down-second">
-          <div class="qodef-drop-down-second-inner">
-            <ul class="sub-menu">
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2240"><a
-                  href="about-us/index.html"><span class="qodef-menu-item-text">About Us</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251"><a
-                  href="who-we-are/index.html"><span class="qodef-menu-item-text">Who We Are</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2245"><a
-                  href="our-offers/index.html"><span class="qodef-menu-item-text">Our Offers</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2244"><a
-                  href="our-clients/index.html"><span class="qodef-menu-item-text">Our Clients</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2247"><a
-                  href="schedule/index.html"><span class="qodef-menu-item-text">Schedule</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2246"><a
-                  href="faq-page/index.html"><span class="qodef-menu-item-text">FAQ Page</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2248"><a
-                  href="vehicles/index.html"><span class="qodef-menu-item-text">Vehicles</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2252"><a
-                  href="oil-change/index.html"><span class="qodef-menu-item-text">Oil Change</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2253"><a
-                  href="wheels-tires/index.html"><span class="qodef-menu-item-text">Wheels &#038; Tires</span></a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2250"><a
-                  href="contact-us/index.html"><span class="qodef-menu-item-text">Contact Us</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242"><a
-                  href="get-in-touch/index.html"><span class="qodef-menu-item-text">Get In Touch</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2241"><a
-                  href="coming-soon/index.html"><span class="qodef-menu-item-text">Coming Soon</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-    -->
 
     <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-32 qodef--hide-link qodef-menu-item--narrow">
       <a href="#"><span class="qodef-menu-item-text">Services<svg
@@ -1661,63 +1553,6 @@
               </g>
             </svg>
           </li>
-          <!--
-      <li
-        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34 qodef--hide-link qodef-menu-item--narrow">
-        <a href="#" onclick="JavaScript: return false;"><span class="qodef-menu-item-text">Blog</span></a><svg
-          class="qodef-svg--menu-arrow qodef-menu-item-arrow" xmlns="http://www.w3.org/2000/svg" width="8.485"
-          height="14.14" viewBox="0 0 8.485 14.14">
-          <g transform="translate(-1371.757 -219.93)">
-            <rect width="10" height="2" transform="translate(1380.243 226.999) rotate(135)" />
-            <rect width="10" height="2" transform="translate(1378.829 228.415) rotate(-135)" />
-          </g>
-        </svg>
-        <div class="qodef-drop-down-second">
-          <div class="qodef-drop-down-second-inner">
-            <ul class="sub-menu">
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a
-                  href="blog-right-sidebar/index.html"><span class="qodef-menu-item-text">Blog Right
-                    Sidebar</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a
-                  href="blog-left-sidebar/index.html"><span class="qodef-menu-item-text">Blog Left
-                    Sidebar</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684"><a
-                  href="blog-no-sidebar/index.html"><span class="qodef-menu-item-text">Blog No Sidebar</span></a>
-              </li>
-              <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-380 qodef--hide-link">
-                <a href="#" onclick="JavaScript: return false;"><span class="qodef-menu-item-text">Post
-                    Types</span></a><svg class="qodef-svg--menu-arrow qodef-menu-item-arrow"
-                  xmlns="http://www.w3.org/2000/svg" width="8.485" height="14.14" viewBox="0 0 8.485 14.14">
-                  <g transform="translate(-1371.757 -219.93)">
-                    <rect width="10" height="2" transform="translate(1380.243 226.999) rotate(135)" />
-                    <rect width="10" height="2" transform="translate(1378.829 228.415) rotate(-135)" />
-                  </g>
-                </svg>
-                <ul class="sub-menu">
-                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-379"><a
-                      href="hands-on-the-wheel/index.html"><span class="qodef-menu-item-text">Standard</span></a>
-                  </li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-381"><a
-                      href="car-design/index.html"><span class="qodef-menu-item-text">Audio</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-382"><a
-                      href="drive-safe/index.html"><span class="qodef-menu-item-text">Gallery</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-383"><a
-                      href="best-technology/index.html"><span class="qodef-menu-item-text">Link</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-384"><a
-                      href="tech-revolution/index.html"><span class="qodef-menu-item-text">Quote</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-385"><a
-                      href="car-fair/index.html"><span class="qodef-menu-item-text">Video</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-683"><a
-                      href="complete-wheels/index.html"><span class="qodef-menu-item-text">No Sidebar</span></a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      -->
           <li
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 qodef--hide-link qodef-menu-item--narrow">
             <a href="../contact-us/index.html"><span class="qodef-menu-item-text">Contact Us</span></a><svg
@@ -1781,6 +1616,63 @@
                     </div>
                   </div>
                 </section>
+
+                <div class="wrapper">
+
+                <div class="packageHeader">PPF Packages</div>
+                  
+                <section class="columns">
+                  
+                  <div class="column">
+                    <h3>Front Bumper</h3>
+                    <img src="../images/PPF/p0.png">
+                    <p>
+                      Full Front Bumper<br>
+                      Headlights<br>
+                      Fog Lights<br>
+                    </p>
+                    <h3>$500</h3>
+                  </div>
+
+                  <div class="column">
+                    <h3>Partial Front</h3>
+                    <img src="../images/PPF/p1.png">
+                    <p>
+                      Full Front Bumper<br>
+                      Headlights<br>
+                      1/3 of the Hood and Fenders<br>
+                      Front Side Mirrors<br>
+                    </p>
+                    <h3>$1000</h3>
+                  </div>
+                  
+                  <div class="column">
+                    <h3>Full Front</h3>
+                    <img src="../images/PPF/p2.png">
+                    <p>
+                      Full Front Bumper<br>
+                      Headlights<br>
+                      Full Hood <br>
+                      Fog Lights<br>
+                      Full fenders<br>
+                      Door Cups<br>
+                      Front Side Mirrors<br>
+                    </p>
+                    <h3>$1750</h3>
+                  </div>
+                  
+                  <div class="column">
+                    <h3>Entire Vehicle</h3>
+                    <img src="../images/PPF/p3.png">
+                    <p>
+                      Entier car - all painted surfaces of the vehicle and headlights<br>
+                    </p>
+                    <h3>$4500</h3>
+                  </div>
+                  
+                </section>	
+                </div>
+
                 <section
                   class="elementor-section elementor-top-section elementor-element elementor-element-dc44b17 elementor-section-full_width qodef-elementor-content-grid elementor-section-height-default elementor-section-height-default"
                   data-id="dc44b17" data-element_type="section">
@@ -2142,25 +2034,6 @@
             <div class="qodef-m-line" style="border-color: transparent;border-style: solid"></div>
           </div>
         </div>
-        <!--
-    <div id="shiftup_core_social_icons_group-4" class="widget widget_shiftup_core_social_icons_group"
-      data-area="side-area">
-      <div class="qodef-social-icons-group">
-        <span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal" style="margin: 0 25px 0 0px">
-          <a itemprop="url" href="https://twitter.com/QodeInteractive" target="_blank"> <span
-              class="qodef-icon-elegant-icons social_twitter qodef-icon qodef-e" style="font-size: 18px"></span>
-          </a> </span><span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"
-          style="margin: 0 25px 0 0px"> <a itemprop="url" href="https://www.instagram.com/wrap.division.customs/"
-            target="_blank"> <span class="qodef-icon-font-awesome fab fa-instagram qodef-icon qodef-e"
-              style=""></span> </a> </span><span
-          class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal" style="margin: 0 20px 0 0px"> <a
-            itemprop="url" href="https://www.facebook.com/profile.php?id=100068791430935     " target="_blank">
-            <span class="qodef-icon-font-awesome fab fa-facebook-square qodef-icon qodef-e" style=""></span> </a>
-        </span><span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"> <a itemprop="url"
-            href="https://vimeo.com/" target="_blank"> <span
-              class="qodef-icon-elegant-icons social_vimeo qodef-icon qodef-e" style=""></span> </a> </span>
-      </div>
-      -->
       </div>
     </div>
   </div>
