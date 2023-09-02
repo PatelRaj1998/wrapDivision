@@ -1,8 +1,8 @@
-
 //Contact form in contact.html page
 window.addEventListener("DOMContentLoaded", function() {
         // JavaScript code for showing/hiding sub-services dropdown based on the selected service
         document.getElementById("service").addEventListener("change", function () {
+            var service = document.getElementById("service");
             var ppf = document.getElementById("ppf");
             var ceramicCoating = document.getElementById("ceramicCoating");
             var vinylWrap = document.getElementById("vinylWrap");
@@ -13,22 +13,21 @@ window.addEventListener("DOMContentLoaded", function() {
             vinylWrap.style.display = "none";
             detailing.style.display = "none";
 
-            if (this.value === "Paint Protection Film") {
+            if (service.value === "Paint Protection Film") {
                 ppf.style.display = "block";
             }
-            else if (this.value === "Ceramic Coating") {
+            else if (service.value === "Ceramic Coating") {
                 ceramicCoating.style.display = "block";
             }
-            else if (this.value === "Vinyl Wrap") {
+            else if (service.value === "Vinyl Wrap") {
                 vinylWrap.style.display = "block";
             } 
-            else if (this.value === "Detailing") {
+            else if (service.value === "Detailing") {
                 detailing.style.display = "block";
             }
         });
 
         // get the form elements defined in your form HTML above
-
         var form = document.getElementById("my-form");
         var button = document.getElementById("my-form-button");
         var status = document.getElementById("my-form-status");
@@ -62,7 +61,6 @@ window.addEventListener("DOMContentLoaded", function() {
             }
             else if ($('#service').val() === "Ceramic Coating") {
                 subService = $('#cc').val();
-                console.log(subService);
             }
             else if ($('#service').val() === "Vinyl Wrap") {
                 subService = $('#vw').val();
@@ -70,14 +68,18 @@ window.addEventListener("DOMContentLoaded", function() {
             else if ($('#service').val() === "Detailing") {
                 subService = $('#dt').val();
             }
-            //console.log(subService.val());
+            else
+            {
+                subService = 'Empty';
+            }
+
             var formData = {
             emailTo: "wrapdivisioncustoms@gmail.com",
             name: $("#name").val(),
             email: $("#email").val(),
             location: "Make: " + $("#car").val() + ".\nPhone: " + $("#phone").val(),
             subject: "Online Website - Get a Quote - " + $('#name').val(),
-            message: "Service: " + $('#service').val() + ".\nSubService: " + subService + ".\n\nMessage: " + $('#message').val()
+            message: "\nService: " + $('#service').val() + ".\nSubService: " + subService + ".\n\nMessage: " + $('#message').val()
         }
     
         // Post request to aws lambda function and that sends an email
@@ -97,7 +99,7 @@ window.addEventListener("DOMContentLoaded", function() {
                     success();
                 },
                 error: function (data) {
-                    console.log(data);
+                    //console.log(data);
                     error();
                     console.log ('error');
                 }
