@@ -1188,12 +1188,38 @@
     #qodef-back-to-top {
       bottom: 105px;
     }
+  
+        .contact-bar {
+            background-color: #404040;
+            color: #fff;
+            padding: 9px 0;
+            text-align: center;
+        }
+        .contact-info {
+            font-size: 14px;
+        }
+        
   </style>
 </head>
 
 <body
   class="page-template page-template-page-full-width page-template-page-full-width-php page page-id-1867 theme-shiftup qode-framework-1.1.8 woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.5.4 qodef-age-verification--opened qodef-back-to-top--enabled qodef-content-bottom--enabled qodef-theme-cursor  qodef-page-dark-skin qodef-blog-dark-skin qodef-header-skin--light qodef-header--standard qodef-header-appearance--none qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--default shiftup-core-1.0 shiftup-1.0 qodef-content-grid-1400 qode-export-1.0 qodef-header-standard--center qodef-search--fullscreen elementor-default elementor-kit-5 elementor-page elementor-page-1867"
   itemscope itemtype="https://schema.org/WebPage">
+  <!-- Contact bar -->
+  <div class="contact-bar">
+    <div class="contact-info">
+        
+        <a style="color: white; padding-right: 3.5%;" href="tel:+16476715607">
+          <i class="fas fa-phone contact-icon"></i>
+          +1 (647) 671-5607
+        </a>
+        
+        <a style="color: white" href="mailto:wrapdivisioncustoms@gmail.com">
+          <i class="fas fa-envelope contact-icon"></i>
+          wrapdivisioncustoms@gmail.com
+        </a>
+    </div>
+  </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
     <defs>
@@ -2247,6 +2273,60 @@
                                           class="wpcf7-form-control wpcf7-text" aria-required="true"
                                           aria-invalid="false" /></span>
                                     </label>
+                                    <label for="service">Select a Service:
+                                      <select id="service" name="service" required aria-required="true">
+                                          <option value="" disabled selected>Select a service</option>
+                                          <option value="Paint Protection Film">Paint Protection Film</option>
+                                          <option value="Vinyl Wrap">Vinyl Wrap</option>
+                                          <option value="Ceramic Coating">Ceramic Coating</option>
+                                          <option value="Detailing">Detailing</option>
+                                      </select>
+                                    </label>
+                                    <!-- Sub-services dropdown (hidden by default) -->
+                                    <div id="ppf" style="display: none;">
+                                        <label for="pp">Select a Sub-Service:
+                                          <select id="pp" name="pp">
+                                              <option value="" disabled selected>Select a sub-service</option>
+                                              <option value="Front Bumper">Front Bumper</option>
+                                              <option value="Partial Front">Partial Front</option>
+                                              <option value="Full Front">Full Front</option>
+                                              <option value="Entire Vehicle">Entire Vehicle</option>
+                                              <option value="Interior">Interior</option>
+                                          </select>
+                                        </label>
+                                    </div>
+                                    <div id="vinylWrap" style="display: none;">
+                                      <label for="vw">Select a Sub-Service:
+                                        <select id="vw" name="vw">
+                                            <option value="" disabled selected>Select a sub-service</option>
+                                            <option value="Full Vehicle">Full Vehicle</option>
+                                            <option value="Partial Vehicle">Partial Vehicle</option>
+                                            <option value="Chrome Delete">Chrome Delete</option>
+                                        </select>
+                                      </label>
+                                    </div>
+                                    <div id="ceramicCoating" style="display: none;">
+                                      <label for="cc">Select a Sub-Service:
+                                        <select id="cc" name="cc">
+                                            <option value="" disabled selected>Select a sub-service</option>
+                                            <option value="Gold">Gold</option>
+                                            <option value="Silver">Silver</option>
+                                            <option value="Bronze">Bronze</option>
+                                        </select>
+                                      </label>
+                                    </div>
+                                    <div id="detailing" style="display: none;">
+                                      <label for="dt">Select a Sub-Service:
+                                        <select id="dt" name="dt">
+                                            <option value="" disabled selected>Select a sub-service</option>
+                                            <option value="Headlight Polishing">Headlight Polishing</option>
+                                            <option value="Paint Correction">Paint Correction</option>
+                                            <option value="Tinting">Tinting</option>
+                                            <option value="Interior Restoration">Interior Restoration</option>
+                                        </select>
+                                      </label>
+                                    </div>
+
                                     <label> Message
                                       <span class="wpcf7-form-control-wrap" data-name="your-message"><textarea
                                           id="message" name="your-message" cols="40" rows="10"
