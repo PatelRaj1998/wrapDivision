@@ -1132,7 +1132,70 @@
         .contact-info {
             font-size: 14px;
         }
-        
+      
+    /* STRUCTURE */
+
+    .wrapper {
+      padding: 5px;
+      max-width: 1400px;
+      width: 95%;
+      margin: 20px auto;
+    }
+
+    .columns {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 5px 0;
+    }
+
+    .column {
+      position: relative;
+      flex: 1;
+      border: 1px solid gray;
+      margin: 2px;
+      padding: 10px;
+      padding-bottom: 7%;
+      text-align: center;
+    }
+    .column > h3{
+      color: white !important;
+    }
+    .packageHeader
+    {
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      padding: 5%;
+    }
+
+    @media screen and (max-width: 980px) {
+      .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+      }
+    }
+
+    @media screen and (max-width: 680px) {
+      .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+      }
+    }
+    .button{
+      bottom: 0;
+      display: inline-block;
+      padding: 2% 3%;
+      background-color: #ff4d24;
+      color: white;
+      font-size: 150%;
+      text-decoration: none;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 15px; /* Adjust the distance from the bottom as needed */
+      left: 50%; /* Align the button horizontally */
+      transform: translateX(-50%); /* Center the button horizontally */
+    }
   </style>
 </head>
 
@@ -1807,6 +1870,42 @@
                     </div>
                   </div>
                 </section>
+                <div class="wrapper">
+
+                <div class="packageHeader">Vinyl Wrap Packages</div>
+ 
+                  <section class="columns">
+ 
+                    <div class="column">
+                      <h4 style="color: white">$3000/starting</h4>
+                      <p>
+                        Vinyl wrapping involves adding a slim vinyl layer onto the exterior of a vehicle, with the goal of safeguarding the paint or altering the appearance. Another common use of vinyl wrapping is for decorating the exterior of vehicles with custom designs, company logos, or commercial advertising, which can be seen on both private and commercial vehicles.                      </p>
+                      <br>
+                      <a href="../contact-us/index.html" class="button">Book Now</a>
+                    </div>
+                    <!-- 
+                    <div class="column">
+                      <h3>Gold</h3>
+                      <p>Limited Life-Time warranty</p>
+                      <h4 style="color: white">$1499/starting</h4>
+                      <p>
+                        Indulge in the pinnacle of hassle-free, long-term protection with our Gold Package. Ideal for those seeking the ultimate maintenance-free solution, this package delivers a superior level of permanent protection. Say goodbye to the worries of upkeep and hello to a showroom-worthy shine that lasts.
+                      </p>
+                      <br>
+                      <p>
+                        <ul style="text-align: left; padding-left: 3%;">
+                          <li>4 layers of 9H paint protection on all painted exterior surfaces</li>
+                          <li>1 layer of Light as a top coat to enhance shine</li>
+                          <li>1 layer of 9H on exterior plastic</li>
+                          <li>1 layer on wheel faces</li>
+                          <li>1 layer on windshield</li>
+                        </ul>
+                      </p>
+                      <a href="../contact-us/index.html" class="button">Book Now</a>
+                    </div>
+                    -->
+                  </section>	
+                  </div>
                 <section
                   class="elementor-section elementor-top-section elementor-element elementor-element-dc44b17 elementor-section-full_width qodef-elementor-content-grid elementor-section-height-default elementor-section-height-default"
                   data-id="dc44b17" data-element_type="section">
